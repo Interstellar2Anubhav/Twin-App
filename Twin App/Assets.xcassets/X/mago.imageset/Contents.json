@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "mago.JPG",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

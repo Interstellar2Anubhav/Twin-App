@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "newt.JPG",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
