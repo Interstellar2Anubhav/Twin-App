@@ -6,16 +6,17 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GADFullScreenContentDelegate {
 
     
     @IBOutlet weak var sliderCollectionView: UICollectionView!
     
     @IBOutlet weak var pageView: UIPageControl!
     
-    
+    private var interstitial: GADInterstitialAd?
     
     var imgArr = [  UIImage(named:"Hogwarts"),
                     UIImage(named:"Beast2") ,
@@ -51,6 +52,20 @@ class ViewController: UIViewController {
         }
         
         
+        let request = GADRequest()
+            GADInterstitialAd.load(withAdUnitID:"ca-app-pub-9380433513141009/9406862052",
+                                        request: request,
+                              completionHandler: { [self] ad, error in
+                                if let error = error {
+                                  print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                                  return
+                                }
+                                interstitial = ad
+                interstitial?.fullScreenContentDelegate = self
+                              }
+            )
+        
+        
     }
     
     @objc func changeImage() {
@@ -75,6 +90,12 @@ class ViewController: UIViewController {
     
     @IBAction func `continue`(_ sender: UIButton) {
         
+        if interstitial != nil {
+            interstitial!.present(fromRootViewController: self)
+              } else {
+                print("Ad wasn't ready")
+              }
+        
         let sec1:CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "sec1") as! CameraViewController
         
         sec1.shareIMG = "DC1"
@@ -85,6 +106,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func `continue2`(_ sender: UIButton) {
+        
+        if interstitial != nil {
+            interstitial!.present(fromRootViewController: self)
+              } else {
+                print("Ad wasn't ready")
+              }
         
         let sec1:CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "sec1") as! CameraViewController
         
@@ -97,6 +124,12 @@ class ViewController: UIViewController {
     
     @IBAction func `continue3`(_ sender: UIButton) {
         
+        if interstitial != nil {
+            interstitial!.present(fromRootViewController: self)
+              } else {
+                print("Ad wasn't ready")
+              }
+        
         let sec1:CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "sec1") as! CameraViewController
         
         sec1.shareIMG = "Beast2"
@@ -108,6 +141,12 @@ class ViewController: UIViewController {
     
     @IBAction func `continue4`(_ sender: UIButton) {
         
+        if interstitial != nil {
+            interstitial!.present(fromRootViewController: self)
+              } else {
+                print("Ad wasn't ready")
+              }
+        
         let sec1:CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "sec1") as! CameraViewController
         
         sec1.shareIMG = "Narnia1"
@@ -116,6 +155,21 @@ class ViewController: UIViewController {
         sec1.shareML = "Narnia1"
         self.navigationController?.pushViewController(sec1, animated: true)
     }
+    
+    /// Tells the delegate that the ad failed to present full screen content.
+     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+       print("Ad did fail to present full screen content.")
+     }
+
+     /// Tells the delegate that the ad presented full screen content.
+     func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+       print("Ad did present full screen content.")
+     }
+
+     /// Tells the delegate that the ad dismissed full screen content.
+     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+       print("Ad did dismiss full screen content.")
+     }
     
     
 }

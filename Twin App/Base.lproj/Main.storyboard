@@ -217,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="3264" y="-336"/>
         </scene>
-        <!--TwinApp-->
+        <!--Twinx-->
         <scene sceneID="bgj-bn-ooR">
             <objects>
                 <viewController id="RcO-lv-2RT" customClass="ViewController" customModule="TwinApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -369,7 +369,7 @@
                             <constraint firstItem="F5C-kL-pY0" firstAttribute="top" secondItem="4d4-cD-QtB" secondAttribute="topMargin" id="ivJ-X4-8Aw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TwinApp" id="sWG-yz-ajU"/>
+                    <navigationItem key="navigationItem" title="Twinx" id="sWG-yz-ajU"/>
                     <size key="freeformSize" width="390" height="1260"/>
                     <connections>
                         <outlet property="pageView" destination="cgi-1s-Ve6" id="HoB-gV-vm2"/>
