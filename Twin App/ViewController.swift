@@ -100,7 +100,7 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
         
         sec1.shareIMG = "DC1"
         sec1.shareIMG2 = "DC2"
-        sec1.shareLabel = "Steppenwolf and his Parademons return after eons to capture Earth. However, Batman seeks the help of Wonder Woman to recruit and assemble Flash, Cyborg and Aquaman to fight the powerful new enemy."
+        sec1.shareLabel = "Steppenwolf and his Parademons return after eons to capture Earth. However, Batman seeks the help of Wonder Woman to recruit and assemble Flash, Cyborg and Aquaman to fight the powerful new enemy. Characters: Aquaman, Batman, Superman, Wonder Woman, Flash, Victor Stone."
         sec1.shareML = "DC1"
         self.navigationController?.pushViewController(sec1, animated: true)
     }
@@ -117,7 +117,7 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
         
         sec1.shareIMG = "XMEN2"
         sec1.shareIMG2 = "XMEN1"
-        sec1.shareLabel = "After a mishap, Jean Grey is struck by a powerful ray of energy which she absorbs into her body, turning her into an uncontrollable liability for the X-Men."
+        sec1.shareLabel = "After a mishap, Jean Grey is struck by a powerful ray of energy which she absorbs into her body, turning her into an uncontrollable liability for the X-Men. Characters: Wolverine, Storm, Raven, Professor X, Erik, Jean, Flash, Cyclops, Beast."
         sec1.shareML = "X1"
         self.navigationController?.pushViewController(sec1, animated: true)
     }
@@ -134,7 +134,7 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
         
         sec1.shareIMG = "Beast2"
         sec1.shareIMG2 = "Beast1"
-        sec1.shareLabel = "Gellert Grindelwald plans to raise an army of wizards to rule over non-magical beings. In response, Newt Scamander's former professor, Albus Dumbledore, seeks his help to stop him."
+        sec1.shareLabel = "Gellert Grindelwald plans to raise an army of wizards to rule over non-magical beings. In response, Newt Scamander's former professor, Albus Dumbledore, seeks his help to stop him. Characters: Dumbledore, Grindelwald, Newt, Credence, Porpentina, Queenie, Nagini, Leta, Theseus, Jacob."
         sec1.shareML = "FB1"
         self.navigationController?.pushViewController(sec1, animated: true)
     }
@@ -151,7 +151,7 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
         
         sec1.shareIMG = "Narnia1"
         sec1.shareIMG2 = "Narnia2"
-        sec1.shareLabel = "While playing, Lucy and her siblings find a wardrobe that lands them in a mystical place called Narnia. Here they realise that it was fated and they must now unite with Aslan to defeat an evil queen."
+        sec1.shareLabel = "While playing, Lucy and her siblings find a wardrobe that lands them in a mystical place called Narnia. Here they realise that it was fated and they must now unite with Aslan to defeat an evil queen. Characters: Aslan, Susan, Lucy, Lucy, Edmund, Prince Caspian, White Witch, Eustace, Mr. Tumnus."
         sec1.shareML = "Narnia1"
         self.navigationController?.pushViewController(sec1, animated: true)
     }

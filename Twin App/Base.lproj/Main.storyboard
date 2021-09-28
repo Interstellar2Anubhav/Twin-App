@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dUo-Ci-RPZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dUo-Ci-RPZ">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -288,7 +288,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI0-g0-hxk">
-                                                <rect key="frame" x="8" y="300" width="371" height="215.66666666666663"/>
+                                                <rect key="frame" x="8" y="300" width="374" height="215.66666666666663"/>
                                                 <state key="normal" image="DC"/>
                                                 <connections>
                                                     <action selector="continue:" destination="RcO-lv-2RT" eventType="touchUpInside" id="7cJ-RT-dIp"/>
@@ -326,7 +326,7 @@
                                             <constraint firstItem="zYU-bF-lJA" firstAttribute="top" secondItem="uPS-Ic-78e" secondAttribute="top" constant="990" id="9Rw-6R-FPb"/>
                                             <constraint firstAttribute="trailing" secondItem="54i-fG-AMR" secondAttribute="trailing" constant="9" id="9S4-MH-rFu"/>
                                             <constraint firstAttribute="bottom" secondItem="54i-fG-AMR" secondAttribute="bottom" constant="218" id="BY7-HP-wWE"/>
-                                            <constraint firstAttribute="trailing" secondItem="LI0-g0-hxk" secondAttribute="trailing" constant="11" id="Bmf-ve-ccN"/>
+                                            <constraint firstAttribute="trailing" secondItem="LI0-g0-hxk" secondAttribute="trailing" constant="8" id="Bmf-ve-ccN"/>
                                             <constraint firstAttribute="bottom" secondItem="ga2-NM-duy" secondAttribute="bottom" constant="454" id="DMV-4F-IpX"/>
                                             <constraint firstItem="ga2-NM-duy" firstAttribute="top" secondItem="uPS-Ic-78e" secondAttribute="top" constant="530" id="Egq-CJ-aYM"/>
                                             <constraint firstItem="LI0-g0-hxk" firstAttribute="leading" secondItem="uPS-Ic-78e" secondAttribute="leading" constant="8" id="Jb9-g9-TpS"/>
